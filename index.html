@@ -8,10 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Hamza.Dev</title>
   </head>
   <body>
-   <header>
+   <header id="#header">
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
         <a class="navbar-brand" href="#">Hamza</a>
@@ -21,31 +21,17 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+                <a class=" btn border-success nav-link" href="https://github.com/gcteamdev">Github</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+                <a class=" btn text-success" href="/about.html">contact</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          
         </div>
       </nav>
       <div class="d-lg-flex">
@@ -58,13 +44,21 @@
       <div class="mt-md-5 mb-sm-5">   <img src="./Untitled design (2).png"/> </div>
     </div>
    <div class="text-center container mb-5 mt-sm-5 p-md-2">
-      <a  href="#" class="btn btn-success bg-white text-success btn-lg btn-md-lg p-md-3 mb-md-5  btn-outline-light contact-me">Contact me!</a>
-      <a href="#" type="button" class="btn text-info btn-lg   btn-md-lg p-md-3 mb-md-5 btn-outline-light contact-me ml-5">LinkedIn</a>
+      <a  href="/about.html" class="btn  bg-dark  btn-lg btn-md-lg p-md-3 mb-md-5  btn-outline-light contact-me">Contact me!</a>
+      <a href="https://www.linkedin.com/in/devhamza/" type="button" class="btn text-info btn-lg   btn-md-lg p-md-3 mb-md-5 btn-outline-light  ml-5">LinkedIn</a>
     
     </div>
 </header>
 
     <style>
+        .contact-me{
+            background:#0f5614!important;
+        }
+        .contact-me:hover{
+                background-color:#166d3c2b!important;
+                color:white!important;
+            }
+        
       body{
         background-color: #166d3b;
         background-image: linear-gradient(147deg, #166d3c2b 10%,#112a30 24%, #020b12, #000000a9 74%);
@@ -109,52 +103,55 @@
 
    <main>
     
-    <div class="container projects-div">
+    <div class="container col-12 projects-div">
         <h3 class="container mt-5"> Projects: </h3>
 
         <h4 class="text-declaration-underline text-center mb-5"> These are few of my favorite projects:- </h4>
       
-        <div class="list-projects d-md-flex justify-content-between container">
+        <div class="list-projects d-md-flex justify-content-between container project-cards-outer">
 
-
-            <div class="card mb-5 bg-dark" style="width: 22rem;">
-                <img class="card-img-top" src="./Screenshot 2022-07-06 074944 project-1.png" alt="Card image cap">
+            
+             <div class="card mb-5 bg-dark" style="width: 20rem;">
+                <a href="https://agile-e.herokuapp.com/"><img class="card-img-top" src="./Screenshot 2022-07-06 074944 project-1.png" alt="Card image cap"></a>
                 <div class="card-body">
                     <h4 class="text-white text-center ">Agile-e!</h4>
                   
-                  <p class="card-text text-info">A secured project planner web. It let's you create an account and create project plans, due date, upload relavent files, mockup desgins for developers and allows you to edit or delete file as well. Used Node.Js and MongoDB as a Back-end tools and front end was JS, Bootstrap,HTML5,CSS for responsive desgins.<br>.</p>
-                  <a class="btn btn-success btn-lg" href="#" role="button">Launch</a>
-                  <a class="btn btn-success bg-white text-success btn-lg" href="#" role="button">Source code</a>
+                  <p class="card-text text-info">A secured project planner App! <br>This application makes use of functions, Loops, Conditional Rendering and involved passing multiple properties to different components.<br>
+                    <br> Used Node.Js and MongoDB as a Back-end tools and front end was JS, Bootstrap,HTML5,CSS for responsive desgins.<br></p>
+                  <a class="btn btn-success btn-lg" href="https://agile-e.herokuapp.com/" role="button">Launch</a>
+                  <a class="btn border-white bg-muted text-success btn-lg ml-2" href="https://github.com/gcteamdev/Agile-e" role="button">Source code</a>
                 </div>
               </div>
+            
+              
 
     
-              <div class="card mb-5 bg-dark" style="width: 22rem;">
-                <img class="card-img-top" src="./inventory bot.png" alt="Card image cap">
+              <div class="card mid-card mb-5 bg-dark" style="width: 20rem;">
+               <a href="https://gcteamdev.github.io/Inventory-Estimator-Bot/"><img class="card-img-top" src="./inventory bot.png" alt="Card image cap"></a> 
                 <div class="card-body">
-                  <h4 class="text-white text-center">Inventory estimator bot!</h4>
+                  <h4 class="text-white text-center">Inventory Estimator Bot!</h4>
                   
                   <p class="card-text text-info">This is a smart inventory bot, which can automate a lot of your inventory calculation. <br>
                     <br>
-                    <br>Created with Java script, Bootstrap, HTML5, and CSS to create a responsive and contemporary design. <br>.</p>
-                  <a class="btn btn-success btn-lg" href="#" role="button">Launch</a>
-                  <a class="btn btn-success bg-white text-success btn-lg" href="#" role="button">Source code</a>
+                    <br>Created with Java script, Bootstrap, HTML5, and CSS to create a responsive and contemporary design. <br></p>
+                  <a class="btn btn-success btn-lg" href="https://gcteamdev.github.io/Inventory-Estimator-Bot/" role="button">Launch</a>
+                  <a class="btn border-white bg-muted text-success btn-lg ml-2" href="https://github.com/gcteamdev/Inventory-Estimator-Bot" role="button">Source code</a>
                 </div>
               </div>
 
 
-              <div class="card mb-5 bg-dark" style="width: 22rem;">
-                <img class="card-img-top" src="./slice bug tracker.png" alt="Card image cap">
+              <div class="card mb-5 bg-dark" style="width: 20rem;">
+                <a href="https://gcteamdev.github.io/BugTracker/"><img class="card-img-top" src="./slice bug tracker.png" alt="Card image cap"> </a>
                 <div class="card-body">
                     <h4 class="text-white text-center">Slice!</h4>
                   
                   <p class="card-text text-info"> Slice is a bug tracker, which is in development.<br>
                     <br>
                     <br>
-                    Used FireBase as a database/backend tools and the front end was developed with JS, Bootstrap,HTML,CSS for responsive desgins.<br>.</p>
+                    Used FireBase as a database/backend tools and the front end was developed with JS, Bootstrap,HTML,CSS for responsive desgins.<br></p>
                     <br>
-                  <a class="btn btn-success btn-lg" href="#" role="button">Launch</a>
-                  <a class="btn btn-success bg-white text-success btn-lg" href="#" role="button">Source code</a>
+                  <a class="btn btn-success btn-lg" href="https://gcteamdev.github.io/BugTracker/" role="button">Launch</a>
+                  <a class="btn border-white bg-muted text-success btn-lg ml-2" href="https://github.com/gcteamdev/BugTracker" role="button">Source code</a>
                 </div>
               </div>
             
@@ -170,8 +167,11 @@
 
 
     <style>
-       
+        .project-cards-outer a:hover {
+            background-color: rgba(128, 128, 128, 0.189);
+}
 
+        
         .projects-div{
             margin-top:150px;
         }
@@ -184,7 +184,11 @@
         .list-projects{
             height:100%;
         }
-      
+        .card{
+            background-color: #020b12!important;
+
+        }
+       
         
     </style>
 
@@ -202,6 +206,20 @@
     
      <div class="container">
         <h3 class="col skills mt-5"> Skills:</h3>
+        <div class="d-sm-block d-md-flex flex-wrap  justify-content-between mb-5">
+            <ui>
+                <li>Leardership</li>
+                <li>Personal Responsibility</li>
+            </ui>
+            <ui>
+                <li>Future orientation</li>
+                <li>Persistence</li>
+            </ui>
+            <ui>
+                <li>Team-work</li>
+                <li>Growth-mindset</li>
+            </ui>
+        </div>
         <div class="d-flex flex-wrap  justify-content-between skills-div bg-white mb-5">
             <img src="./java-script.png" />
             <img src="./python.png" />
@@ -215,10 +233,12 @@
 
    <style>
      .skills-div{
-        background-color: white;
+        background: none!important;
      }
      main img{
-        width:15%; 
+        width:10%; 
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px 5px;
+        
      }
      .skills{
         margin-top:200px!important;
@@ -229,6 +249,100 @@
      }
    </style>
 
+
+
+
+
+    <!--review-->
+    <div class="testimonial">
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <p>"Gulam is a pleasure to work with and a wealth of skill and knowledge though reasonably priced! Fantastic customer service and results!! He was able to resolve our issues quickly and effectively. Highly recommended."</p>
+          <div class="image-testimonials"> 
+          </div>
+          <div class="details">
+            <h2>Todd Y.</h2> <br> <span>https://www.greenappleactive.com/</span>
+            <h1 class="testimonials-hover"> <br>★★★★★</h1>
+          </div>
+               </div>
+    </div>
+
+
+
+
+
+      <style>
+          
+    .testimonial{
+      margin:200px auto 100px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+      grid-gap:20px;
+    }
+    .testimonial .card{
+      position:relative;
+      margin:0 auto;
+      width:350px;
+      background:#333;
+      padding:20px;
+      box-sizing:border-box;
+      text-align:center;
+      box-shadow:0 10px 40px rgba(0,0,0,.5);
+      overflow:hidden;
+    }
+    .testimonial .card .layer{
+      position:absolute;
+      top:calc(100% - 2px);
+      left:0;
+      height:100%;
+      width:100%;
+      background:linear-gradient(#151515, #00fff75a);
+      z-index:1;
+      transition:0.5s;
+    }
+    .testimonial .card:hover .layer{
+      top:0;
+    }
+    .testimonial .card .content{
+      position:relative;
+      z-index:2;
+    }
+    .testimonial .card .content p{
+      font-size:18px;
+      line-height:24px;
+    }
+    .testimonial .card .content .image-testimonials{
+      width:128px;
+      height:128px;
+      margin:0 auto;
+      border-radius:50%;
+      overflow:hidden;
+      border:4px solid rgb(12, 0, 0);
+      box-shadow:0 10px 20px
+        rgba(0,0,0,.2);
+    }
+    .image-testimonials{
+      background-image:url(./—Pngtree—businessman\ vector\ icon_3788517.png);
+      background-size: cover;
+    
+    }
+    .testimonial .card .content .details h2{
+      font-size:18px;
+    }
+    .testimonial .card .content .details span{
+      color:#a4daf3;
+      font-size:14px;
+      transition:0.5s;
+    }
+    .testimonial .card:hover .content .details span{
+      color:rgb(8, 1, 1);
+    }
+    
+    
+    
+
+    </style>
 
    </main>
 
@@ -254,5 +368,60 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     -->
+
+
+    
+
+    <!--footer starts here-->
+    <footer class="navbar navbar-expand-lg navbar-light text-center container-fluid d-flex footer-first-div">
+        <div class="col">
+          <a class="navbar-brand" href="/index.html">Hamza</a>
+         
+           <div class=" text-center footer-links col-md-4">
+               <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+             
+               <a class="nav-link" href="/about.html">About</a>
+             
+            
+               <a class="nav-link active" aria-current="page" href="https://github.com/gcteamdev">GitHub</a>
+            
+               <a class="nav-link active" aria-current="page" href="https://www.linkedin.com/in/devhamza/">LinkedIn</a>
+            
+           </div>
+        </div> 
+
+        <p class="text-muted">“I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion'.”
+          <br>
+            ― Muhammad Ali</p>
+
+
+        <div class="social-media mr-5 col-md-4">
+            <a href="https://www.facebook.com/profile.php?id=100077323763865" class="fa fa-facebook"> <img src="/facebook.png"/></a> 
+            <a href="https://www.instagram.com/gcteam.dev/" class="fa fa-IG"><img src="/instagram.png"/></a> 
+            <a href="https://www.upwork.com/freelancers/~01218b917959767db9" class="fa fa-UPwork"><img src="/upwork-logo-black-and-white.png"/></a>
+        </div>
+         
+    
+    </footer>
+
+    <p class="copyright col-12 text-center text-muted">© 2022 gcteamdev </p> 
+    <style>
+        footer{
+            background:black!important;
+            height:600px;
+        }
+        .social-media img{
+            width:25%;
+            padding:20px;
+        }
+        .fa-UPwork{
+            background-color:greenyellow;
+            border-radius: 50%;
+        }
+    
+        div a{
+            color:greenyellow;
+        }
+    </style>
   </body>
 </html>
