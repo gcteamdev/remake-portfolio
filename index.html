@@ -41,7 +41,10 @@
       <div class="d-lg-flex">
       <div>
         <h1 class="container h1-banner mt-5 col-md--6"> G.Hamza Choudhury</G.Hamza></h1>
-        <h5 class="container col-10 mb-5">সালাম |<br> I'm a 'Front-end Web Developer' and a whale enthusiast based in WA. I am a super self-motivated and lifelong learner, who always strives for excellence!!!</h5><br>
+        <div class="col text-center myDIV">সালাম |</div>
+          <div class="hide col text-center">May Peace be on you!.</div>
+        
+        <h5 class="container col-10 mb-5">I'm a 'Front-end Web Developer' and a whale enthusiast based in WA. I am a super self-motivated and lifelong learner, who always strives for excellence!!!</h5><br>
 
         
       </div>
@@ -100,6 +103,17 @@
         margin-bottom:5px;
         box-shadow: rgb(38, 57, 77) 0px 20px 30px 5px;
        }
+       .hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color:whitesmoke;
+}     
+    .myDIV{
+      font-size:35px;
+    }
        
     </style>
 
