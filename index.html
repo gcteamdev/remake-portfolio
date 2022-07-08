@@ -13,7 +13,7 @@
   <body>
    <header id="#header">
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+    <nav class="navbar navbar1 navbar-expand-lg navbar-light bg-light mt-2">
         <a class="navbar-brand" href="#">Hamza</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,9 +42,9 @@
       <div>
         <h1 class="container h1-banner mt-5 col-md--6"> G.Hamza Choudhury</G.Hamza></h1>
         <div class="col text-center myDIV">সালাম |</div>
-          <div class="hide col text-center">May Peace be on you!</div>
+          <div class="hide col-4 text-center">May Peace be upon you!</div>
         
-        <h5 class="container col-10 mb-5">I'm a 'Front-end Web Developer' and a whale enthusiast based in WA. I am a super self-motivated and lifelong learner, who always strives for excellence!!!</h5><br>
+        <h5 class="container col-10 mb-5 description">I'm a 'Front-end Web Developer' and a whale enthusiast based in WA. I am a super self-motivated and lifelong learner, who always strives for excellence!!!</h5><br>
 
         
       </div>
@@ -68,7 +68,7 @@
         
       body{
         background-color: #166d3b;
-        background-image: linear-gradient(147deg, #166d3c2b 10%,#112a30 24%, #020b12, #000000a9 74%);
+        background-image: linear-gradient(147deg, #166d3c2b 1%,#112a30 14%, #020b12, #000000a9 74%);
         background-repeat: no-repeat;
         color:white;
        }
@@ -78,6 +78,7 @@
         font-size: 57px;
         margin-top:120px!important;
         box-shadow: rgb(38, 57, 77) 0px 20px 30px 5px;
+        color:#c0c0c0!important;
        }
        h4{
         font-family: Segoe Print,cursive!important;
@@ -90,12 +91,16 @@
         background-image: linear-gradient(147deg, #117f9b77 68%,#112a3015 24%, #020b1200, #0000002e 74%);
 
        }
+      
        .navbar-brand{
         font-family: Segoe Print; 
         color:#166d3b!important;
         font-size:35px;
         font-family: Segoe Print,cursive!important;
 
+       }
+       .navbar1{
+        background: #c0c0c0!important;
        }
        header img{
         width: 75%!important;
@@ -104,16 +109,22 @@
         box-shadow: rgb(38, 57, 77) 0px 20px 30px 5px;
        }
        .hide {
-  display: none;
-}
+        display: none;
+       }
     
-.myDIV:hover + .hide {
-  display: block;
-  color:whitesmoke;
-}     
-    .myDIV{
-      font-size:35px;
-    }
+      .myDIV:hover + .hide {
+        display: block;
+        color:whitesmoke;
+        border:1px solid #c0c0c0!important;
+        border-radius: 3px;
+        margin:auto;
+      }     
+      .myDIV{
+       font-size:35px;
+      }
+      .description{
+        color:#c0c0c0!important;
+      }
        
     </style>
 
@@ -126,12 +137,12 @@
     <div class="container col-12 projects-div">
         <h3 class="container mt-5"> Projects: </h3>
 
-        <h4 class="text-declaration-underline text-center mb-5"> These are some of my favorite projects:- </h4>
+        <h4 class="text-declaration-underline text-center mb-5 sub-heading-projects"> These are some of my favorite projects:- </h4>
       
         <div class="list-projects d-md-flex justify-content-between container project-cards-outer">
 
             
-             <div class="card mb-5 bg-dark" style="width: 20rem;">
+             <div class="card card-projects mb-5 bg-dark" style="width: 20rem;">
                 <a href="https://agile-e.herokuapp.com/"><img class="card-img-top" src="./assests/Screenshot 2022-07-06 074944 project-1.png" alt="Card image cap"></a>
                 <div class="card-body">
                     <h4 class="text-white text-center ">Agile-e!</h4>
@@ -146,7 +157,7 @@
               
 
     
-              <div class="card mid-card mb-5 bg-dark" style="width: 20rem;">
+              <div class="card card-projects mid-card mb-5 bg-dark" style="width: 20rem;">
                <a href="https://gcteamdev.github.io/Inventory-Estimator-Bot/"><img class="card-img-top" src="./assests/inventory bot.png" alt="Card image cap"></a> 
                 <div class="card-body">
                   <h4 class="text-white text-center">Inventory Estimator Bot!</h4>
@@ -161,7 +172,7 @@
               </div>
 
 
-              <div class="card mb-5 bg-dark" style="width: 20rem;">
+              <div class="card card-projects mb-5 bg-dark" style="width: 20rem;">
                 <a href="https://gcteamdev.github.io/BugTracker/"><img class="card-img-top" src="./assests/slice bug tracker.png" alt="Card image cap"> </a>
                 <div class="card-body">
                     <h4 class="text-white text-center">Slice!</h4>
@@ -192,9 +203,13 @@
     <style>
         .project-cards-outer a:hover {
             background-color: rgba(128, 128, 128, 0.189);
-}
-
-        
+        }
+        .card-projects{
+          border: 1px solid white;
+        }
+        .sub-heading-projects{
+          color:#c0c0c0!important;
+        }
         .projects-div{
             margin-top:150px;
         }
@@ -313,6 +328,7 @@
       text-align:center;
       box-shadow:0 10px 40px rgba(0,0,0,.5);
       overflow:hidden;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px 5px;
     }
     .testimonial .card .layer{
       position:absolute;
